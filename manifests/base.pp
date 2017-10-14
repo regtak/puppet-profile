@@ -3,7 +3,7 @@ class profile::base(
     '0.ubuntu.pool.ntp.org',
     '1.ubuntu.pool.ntp.org',
   ],
-  $ntp_service_enable = True
+  $ntp_service_enable = 'True'
 ) {
   include ::ssh
   class {'::ntp': 
