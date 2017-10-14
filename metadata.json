@@ -1,0 +1,15 @@
+{
+  "name": "remagin-profile",
+  "version": "0.1.0",
+  "author": "remagin",
+  "summary": "Profile Module",
+  "license": "Apache-2.0",
+  "source": "git@github.com:regtak/puppet-profile.git",
+  "project_page": "https://github.com/regtak/puppet-profile/issues",
+  "issues_url": null,
+  "dependencies": [
+    {"name":"puppetlabs-stdlib","version_requirement":">= 1.0.0"}
+  ],
+  "data_provider": null
+}
+
