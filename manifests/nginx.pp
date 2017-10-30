@@ -4,9 +4,9 @@ class profile::nginx
 ) {
   include ::nginx
   
-  vhosts.each | $vhost | {
+  $vhosts.each | $vhost | {
     ::nginx::vhost { $vhost['fqdn']:
-      port           => $vhost[port],
+      port           => $vhost['port'],
       server_aliases => $vhost['server_aliases'],
     }
   }
