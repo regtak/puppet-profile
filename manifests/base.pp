@@ -8,7 +8,7 @@ class profile::base(
   include ::ssh
   class {'::ntp': 
     servers => $ntp_servers,
-    serivce_enable => $ntp_service_enable
+    service_enable => $ntp_service_enable
   }
   
   if $facts['os']['family'] == 'RedHat' {
